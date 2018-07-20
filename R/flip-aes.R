@@ -6,7 +6,11 @@ flip_lookup <- c(
   xmax_final = "ymax_final", yintercept = "xintercept",
   ymin_final = "xmin_final", ymax_final = "xmax_final",
   x_scales = "y_scales", y_scales = "x_scales",
-  SCALE_X = "SCALE_Y", SCALE_Y = "SCALE_X"
+  SCALE_X = "SCALE_Y", SCALE_Y = "SCALE_X",
+  lower = "xlower", middle = "xmiddle", upper = "xupper",
+  xlower = "lower", xmiddle = "middle", xupper = "upper",
+  xid = "yid", new_width = "new_height", newx = "newy",
+  xmin_final = "ymin_final"
 )
 
 

@@ -49,6 +49,17 @@ test_that("geom_barh() flips", {
   h_facet <- ggplot(range_df, aes(resp, trt)) + facet_wrap(~group) +
     geom_barh(position = "dodgev", stat = "identity")
   check_horizontal(v_facet, h_facet, "geom_barh() + facet_wrap()")
+
+  v <- ggplot(mpg, aes(x = class)) + geom_bar()
+  h <- ggplot(mpg, aes(y = class)) + geom_barh()
+  check_horizontal(v, h, "geom_barh() with count stat")
+})
+
+test_that("geom_colh() flips", {
+  df <- data.frame(trt = c("a", "b", "c"), outcome = c(2.3, 1.9, 3.2))
+  v <- ggplot(df, aes(trt, outcome)) + geom_col()
+  h <- ggplot(df, aes(outcome, trt)) + geom_colh()
+  check_horizontal(v, h, "geom_colh()")
 })
 
 test_that("geom_histogramh() flips", {
@@ -73,6 +84,14 @@ test_that("geom_violinh() flips", {
   v_facet <- ggplot(mtcars, aes(factor(cyl), mpg, fill = factor(am))) + facet_wrap(~vs) + geom_violin()
   h_facet <- ggplot(mtcars, aes(mpg, factor(cyl), fill = factor(am))) + facet_wrap(~vs) + geom_violinh()
   check_horizontal(v_facet, h_facet, "geom_violinh() + facet_wrap()")
+
+  set.seed(111)
+  dat <- data.frame(x = LETTERS[1:3], y = rnorm(90))
+  dat <- dat[dat$x != "C" | c(TRUE, FALSE), ] # Keep half the C's
+
+  v <- ggplot(dat, aes(x = x, y = y)) + geom_violin(draw_quantiles = c(0.25, 0.5, 0.75))
+  h <- ggplot(dat, aes(x = y, y = x)) + geom_violinh(draw_quantiles = c(0.25, 0.5, 0.75))
+  check_horizontal(v, h, "geom_violinh() + draw_quantiles")
 })
 
 test_that("geom_boxploth() flips", {
@@ -87,6 +106,11 @@ test_that("geom_boxploth() flips", {
   v_facet_fill <- ggplot(mpg, aes(class, hwy, fill = factor(cyl))) + facet_wrap(~model) + geom_boxplot()
   h_facet_fill <- ggplot(mpg, aes(hwy, class, fill = factor(cyl))) + facet_wrap(~model) + geom_boxploth()
   check_horizontal(v_facet_fill, h_facet_fill, "geom_boxploth() + facet_wrap() with fill")
+
+  df <- data.frame(x = 1:10, y = rep(1:2, 5))
+  h_continuous <- ggplot(df) + geom_boxploth(aes(x = x, y = y, group = 1))
+  v_continuous <- ggplot(df) + geom_boxplot(aes(x = y, y = x, group = 1))
+  check_horizontal(v_continuous, h_continuous, "geom_boxploth() and continuous y scale")
 })
 
 test_that("facet_grid() with free scales flips", {
