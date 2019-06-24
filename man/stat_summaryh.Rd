@@ -6,8 +6,8 @@
 \usage{
 stat_summaryh(mapping = NULL, data = NULL, geom = "pointrangeh",
   position = "identity", ..., fun.data = NULL, fun.x = NULL,
-  fun.xmax = NULL, fun.xmin = NULL, fun.args = list(), na.rm = FALSE,
-  show.legend = NA, inherit.aes = TRUE)
+  fun.xmax = NULL, fun.xmin = NULL, fun.args = list(),
+  na.rm = FALSE, show.legend = NA, inherit.aes = TRUE)
 }
 \arguments{
 \item{mapping}{Set of aesthetic mappings created by \code{\link[=aes]{aes()}} or
@@ -26,18 +26,19 @@ data. All objects will be fortified to produce a data frame. See
 \code{\link[=fortify]{fortify()}} for which variables will be created.
 
 A \code{function} will be called with a single argument,
-the plot data. The return value must be a \code{data.frame.}, and
-will be used as the layer data.}
+the plot data. The return value must be a \code{data.frame}, and
+will be used as the layer data. A \code{function} can be created
+from a \code{formula} (e.g. \code{~ head(.x, 10)}).}
 
 \item{geom}{Use to override the default connection between
-\code{geom_histogram}/\code{geom_freqpoly} and \code{stat_bin}.}
+\code{geom_histogram()}/\code{geom_freqpoly()} and \code{stat_bin()}.}
 
 \item{position}{Position adjustment, either as a string, or the result of
 a call to a position adjustment function.}
 
 \item{...}{Other arguments passed on to \code{\link[=layer]{layer()}}. These are
 often aesthetics, used to set an aesthetic to a fixed value, like
-\code{color = "red"} or \code{size = 3}. They may also be parameters
+\code{colour = "red"} or \code{size = 3}. They may also be parameters
 to the paired geom/stat.}
 
 \item{fun.data}{A function that is given the complete data and should
@@ -66,3 +67,14 @@ the default plot specification, e.g. \code{\link[=borders]{borders()}}.}
 \description{
 Horizontal version of \code{\link[ggplot2]{stat_summary}}().
 }
+\section{Aesthetics}{
+
+\code{stat_summaryh()} understands the following aesthetics (required aesthetics are in bold):
+\itemize{
+  \item \strong{\code{x}}
+  \item \strong{\code{y}}
+  \item \code{group}
+}
+Learn more about setting these aesthetics in \code{vignette("ggplot2-specs")}.
+}
+

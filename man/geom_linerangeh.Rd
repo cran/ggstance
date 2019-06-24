@@ -41,8 +41,9 @@ data. All objects will be fortified to produce a data frame. See
 \code{\link[=fortify]{fortify()}} for which variables will be created.
 
 A \code{function} will be called with a single argument,
-the plot data. The return value must be a \code{data.frame.}, and
-will be used as the layer data.}
+the plot data. The return value must be a \code{data.frame}, and
+will be used as the layer data. A \code{function} can be created
+from a \code{formula} (e.g. \code{~ head(.x, 10)}).}
 
 \item{stat}{The statistical transformation to use on the data for this
 layer, as a string.}
@@ -52,7 +53,7 @@ a call to a position adjustment function.}
 
 \item{...}{Other arguments passed on to \code{\link[=layer]{layer()}}. These are
 often aesthetics, used to set an aesthetic to a fixed value, like
-\code{color = "red"} or \code{size = 3}. They may also be parameters
+\code{colour = "red"} or \code{size = 3}. They may also be parameters
 to the paired geom/stat.}
 
 \item{fatten}{A multiplicative factor used to increase the size of the
@@ -79,3 +80,77 @@ Horizontal versions of \code{\link[ggplot2]{geom_linerange}()},
 \code{\link[ggplot2]{geom_errorbar}()} and
 \code{\link[ggplot2]{geom_crossbar}()}.
 }
+\section{Aesthetics}{
+
+\code{geom_crossbarh()} understands the following aesthetics (required aesthetics are in bold):
+\itemize{
+  \item \strong{\code{x}}
+  \item \strong{\code{y}}
+  \item \strong{\code{xmin}}
+  \item \strong{\code{xmax}}
+  \item \code{alpha}
+  \item \code{colour}
+  \item \code{fill}
+  \item \code{group}
+  \item \code{linetype}
+  \item \code{size}
+}
+Learn more about setting these aesthetics in \code{vignette("ggplot2-specs")}.
+
+
+\code{geom_errorbarh()} understands the following aesthetics (required aesthetics are in bold):
+\itemize{
+  \item \strong{\code{y}}
+  \item \strong{\code{xmin}}
+  \item \strong{\code{xmax}}
+  \item \code{alpha}
+  \item \code{colour}
+  \item \code{group}
+  \item \code{linetype}
+  \item \code{size}
+  \item \code{width}
+}
+Learn more about setting these aesthetics in \code{vignette("ggplot2-specs")}.
+
+
+\code{geom_linerangeh()} understands the following aesthetics (required aesthetics are in bold):
+\itemize{
+  \item \strong{\code{y}}
+  \item \strong{\code{xmin}}
+  \item \strong{\code{xmax}}
+  \item \code{alpha}
+  \item \code{colour}
+  \item \code{group}
+  \item \code{linetype}
+  \item \code{size}
+}
+Learn more about setting these aesthetics in \code{vignette("ggplot2-specs")}.
+
+
+\code{geom_pointrangeh()} understands the following aesthetics (required aesthetics are in bold):
+\itemize{
+  \item \strong{\code{x}}
+  \item \strong{\code{y}}
+  \item \strong{\code{xmin}}
+  \item \strong{\code{xmax}}
+  \item \code{alpha}
+  \item \code{colour}
+  \item \code{fill}
+  \item \code{group}
+  \item \code{linetype}
+  \item \code{shape}
+  \item \code{size}
+  \item \code{stroke}
+}
+Learn more about setting these aesthetics in \code{vignette("ggplot2-specs")}.
+}
+
+\section{Different between ggplot2 and ggstance}{
+
+
+`ggplot2::geom_errorbarh()` uses the `height` aesthetic. The
+ggstance version uses the `width` aesthetic. This is for
+consistency with the direction of the geom and other ggstance
+functions. You can still supply `height` for compatibility.
+}
+

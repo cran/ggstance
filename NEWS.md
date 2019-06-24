@@ -1,4 +1,15 @@
 
+# ggstance 0.3.2
+
+* Compatibility with ggplot2 3.2.0.
+
+* Aesthetics are now documented in the manual pages (#28).
+
+* `geom_errorbarh()` now supports `height` for compatibility with
+  ggplot2's version. It no longer matters whether ggplot2 or ggstance
+  is loaded first (#27, #29).
+
+
 # ggstance 0.3.1
 
 This version updates all ggstance layers to feature parity with
