@@ -1,6 +1,6 @@
-e36af92e408d7b5ea27700aaa6a771df *DESCRIPTION
+035378184314b5cf4c80933775f6e7f7 *DESCRIPTION
 ebb9677a841bb72972ea6f0a7f1c5b1e *NAMESPACE
-87d910a010de03abc78fce62bbb5785e *NEWS.md
+e5e8825ec717a20264f741ecb15643f3 *NEWS.md
 47fd76495926521213c117e3b5f1acba *R/flip-aes.R
 d2b4b45501abe1fdb722c1b56272bef9 *R/geom-barh.R
 0091da04523d8d784a7167916424c74b *R/geom-boxploth.R
@@ -13,10 +13,10 @@ b53d34f6dd02ed265c60addcbe982f55 *R/geom-pointrangeh.R
 c5bbbb941a0cd7bbfeaaa8801ba2b501 *R/geom-violinh.R
 4774efd0c702a1b15eacbcb94050a7c7 *R/ggstance.R
 dd2df5654cc9968674d93c9e7da97a1b *R/legend-draw.R
-62fe9073bfb5b6b39b3457a1917e6ce0 *R/position-dodge2v.R
+62162b2b04ee0e6fefddd6f78175e007 *R/position-dodge2v.R
 a810e82a171c03d78184085f4e049199 *R/position-dodgev.R
 de3eeddda466bcefd791f36fee174d8b *R/position-jitterdodgev.R
-c8b9f2bc0b3bd3bb8cadcf8f54252368 *R/position-stackv.R
+cd80d424a7dc873929f5baa6e235ca52 *R/position-stackv.R
 c0b0d4684bbbd81d5e3329b87e9024cd *R/position.R
 f6bd21c4351a6c5dd93bff786fad4d03 *R/stat-binh.R
 9562cb75f5dff3bf83ce1d20db8ca89f *R/stat-boxploth.R
@@ -33,7 +33,7 @@ e69e482015453a324f06c32993e9aaf1 *man/geom_violinh.Rd
 d123808603037be1d1741f2b114260a4 *man/ggstance-ggproto.Rd
 314ddf324678d68a5cedc0c5324c9bcc *man/hmisc_h.Rd
 250814af12fffbeedd3645db754de539 *man/mean_se_h.Rd
-f4353db59b9ce285ad4b984371b53f2b *man/position-vertical.Rd
+6fc8183896077612c0f8701bc1858c90 *man/position-vertical.Rd
 4d2a4e8e2d531532d33206d3c95e0767 *man/stat_binh.Rd
 86d96b4b7434d82bbdc0a0ec91bebd26 *man/stat_boxploth.Rd
 730c4805a12ce622cd38a715e7fa9787 *man/stat_counth.Rd
@@ -46,8 +46,8 @@ fd7e073214a2725822a6af54b041f338 *tests/figs/geoms/facet-grid-with-free-scales.s
 a6d617a16d90e3e018643e7893726b42 *tests/figs/geoms/geom-barh-with-count-stat.svg
 67a7ab21d0aa14f905cf3739bbd99835 *tests/figs/geoms/geom-barh.svg
 635f3b2e34aab62a8ccca05d89002b05 *tests/figs/geoms/geom-boxploth-and-continuous-y-scale.svg
-47c3e0b04fc1dd0f159291086db958c2 *tests/figs/geoms/geom-boxploth-facet-wrap-with-fill.svg
-2f70621dda67cb9a9196aa43c07e7b4c *tests/figs/geoms/geom-boxploth-with-fill.svg
+22db6ddbdacfe7ae7a432133b63f2eb5 *tests/figs/geoms/geom-boxploth-facet-wrap-with-fill.svg
+b906f0fcf62c41e1dab5e867eb4eb19e *tests/figs/geoms/geom-boxploth-with-fill.svg
 1e4ab051786460f51c4cedfc01f5fea8 *tests/figs/geoms/geom-boxploth.svg
 b85f1c8176b3edcbc93d120831903d8a *tests/figs/geoms/geom-colh.svg
 9325f8f0d3707b7fd043217d11551236 *tests/figs/geoms/geom-crossbarh.svg
@@ -63,9 +63,10 @@ abdef74607602e67680e7edf9f0d49e2 *tests/figs/geoms/geom-pointrangeh.svg
 4e3426379b0ca55c45cc51d0927fa83f *tests/figs/geoms/geom-violinh-facet-wrap.svg
 91124ea8e7b762d874b3cd74cbca4590 *tests/figs/geoms/geom-violinh.svg
 5e4a6318d6f4388aaba6be4641c0b276 *tests/figs/geoms/scales.svg
+7fdbe849fc2c0ed8622b4efc7513f09b *tests/figs/positions/boxplot-with-legend-order-aligned-to-bar-order.svg
 d4db562cf0b491c9fa8155630d1cb60b *tests/figs/positions/position-dodge.svg
 918f5389772d9686b1377863c74c98eb *tests/figs/positions/position-jitterdodge.svg
-4e0a52cf3b2cff0e6456df0f94977247 *tests/figs/positions/position-stackv-with-hjust-argument.svg
+e0e4b73550f1483cb339acd3285f23af *tests/figs/positions/position-stackv-with-hjust-argument.svg
 04bf28ffbf2562b0023cd2370fe0295a *tests/figs/stats/stat-summaryh-with-fun-data.svg
 62065bb51cd3e54e1544c71f3172f500 *tests/figs/stats/stat-summaryh-with-fun-x.svg
 c51e04c1762aa4eb910204de2b257f8c *tests/figs/stats/stat-summaryh-with-median-hilow-h.svg
@@ -74,6 +75,6 @@ c51e04c1762aa4eb910204de2b257f8c *tests/figs/stats/stat-summaryh-with-median-hil
 f930b8ead986ca0020b6cbd4b5aa1621 *tests/testthat/helper-utils.R
 a704494c71d48c3fc446054abd8494ff *tests/testthat/test-flip.R
 a764435046c673c9080cc133cef1fd52 *tests/testthat/test-geom-errorbarh.R
-49f82311de64c22d4a35df171002d63c *tests/testthat/test-geoms.R
-9388133ade6d97cd411c8f417d1325f0 *tests/testthat/test-positions.R
+0e3873c33bd420edc9d8a052a03fa96f *tests/testthat/test-geoms.R
+c56595d1e8d3e547e4e3b403c92dc972 *tests/testthat/test-positions.R
 b7ca428f816fbc232fcd0f3896291c23 *tests/testthat/test-stats.R
