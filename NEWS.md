@@ -1,4 +1,14 @@
 
+# ggstance 0.3.4
+
+* Compatibility with ggplot2 3.3.0.
+
+  Since ggplot2 3.3.0 has now full support for horizontality, the
+  ggstance package is superseded. It will continue to be maintained
+  for some time, but please consider switching to ggplot2 horizontal
+  features.
+
+
 # ggstance 0.3.3
 
 * Order of bars within groups is aligned with legend order (#21,
