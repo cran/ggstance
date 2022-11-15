@@ -1,4 +1,11 @@
+# ggstance 0.3.6
+
+* Maintenance release for CRAN checks.
+
+
 # ggstance 0.3.5
+
+* Maintenance release for CRAN checks.
 
 
 # ggstance 0.3.4

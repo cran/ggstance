@@ -1,6 +1,6 @@
 Package: ggstance
 Title: Horizontal 'ggplot2' Components
-Version: 0.3.5
+Version: 0.3.6
 Authors@R: c(
     person("Lionel", "Henry", , "lionel@rstudio.com", role = c("aut", "cre")),
     person("Hadley", "Wickham", , "hadley@rstudio.com", "aut"),
@@ -12,13 +12,13 @@ Description: A 'ggplot2' extension that provides flipped components:
     of 'Positions'. This package is now superseded by 'ggplot2' itself
     which now has full native support for horizontal layouts. It
     remains available for backward compatibility.
-Depends: R (>= 3.1.0)
-Imports: ggplot2 (>= 3.2.0), plyr, rlang, withr (>= 2.0.0)
-Suggests: covr, Hmisc, testthat, vdiffr (>= 0.3.0)
+Depends: R (>= 3.6.0)
+Imports: cli (>= 3.4.1), ggplot2 (>= 3.4.0), plyr, rlang, withr (>=
+        2.0.0)
+Suggests: covr, Hmisc, testthat, vdiffr (>= 1.0.4)
 URL: https://github.com/lionel-/ggstance
 BugReports: https://github.com/lionel-/ggstance/issues
 License: GPL-3
-LazyData: true
 Encoding: UTF-8
 RoxygenNote: 7.1.1
 Collate: 'flip-aes.R' 'geom-barh.R' 'legend-draw.R' 'geom-boxploth.R'
@@ -30,11 +30,11 @@ Collate: 'flip-aes.R' 'geom-barh.R' 'legend-draw.R' 'geom-boxploth.R'
         'stat-boxploth.R' 'stat-counth.R' 'stat-summaryh.R'
         'stat-xdensity.R'
 NeedsCompilation: no
-Packaged: 2020-12-16 13:54:10 UTC; lionel
+Packaged: 2022-11-14 14:15:54 UTC; lionel
 Author: Lionel Henry [aut, cre],
   Hadley Wickham [aut],
   Winston Chang [aut],
   RStudio [cph]
 Maintainer: Lionel Henry <lionel@rstudio.com>
 Repository: CRAN
-Date/Publication: 2020-12-17 19:40:02 UTC
+Date/Publication: 2022-11-16 00:20:02 UTC
