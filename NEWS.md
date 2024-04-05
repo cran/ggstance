@@ -1,3 +1,8 @@
+# ggstance 0.3.7
+
+* This is the last version of ggstance. It's going to be removed from CRAN soon. Please use ggplot2 instead.
+
+
 # ggstance 0.3.6
 
 * Maintenance release for CRAN checks.

@@ -1,6 +1,6 @@
-ded8085f84092ade139fc841ac9c732d *DESCRIPTION
+4f79e59208e19958a14edc3e962cc335 *DESCRIPTION
 ebb9677a841bb72972ea6f0a7f1c5b1e *NAMESPACE
-8c837b6b2e67cf98cc1b61422097301a *NEWS.md
+7423fcfa2225217ff653c38df8ad68de *NEWS.md
 47fd76495926521213c117e3b5f1acba *R/flip-aes.R
 83bc2ff57015c3ed010108094d7ce336 *R/geom-barh.R
 0091da04523d8d784a7167916424c74b *R/geom-boxploth.R
@@ -19,7 +19,7 @@ de3eeddda466bcefd791f36fee174d8b *R/position-jitterdodgev.R
 cd80d424a7dc873929f5baa6e235ca52 *R/position-stackv.R
 c0b0d4684bbbd81d5e3329b87e9024cd *R/position.R
 f6bd21c4351a6c5dd93bff786fad4d03 *R/stat-binh.R
-9562cb75f5dff3bf83ce1d20db8ca89f *R/stat-boxploth.R
+ff8e00ab9d0e8f9f9d99f03fe6d53c94 *R/stat-boxploth.R
 8e5b4a9baade1d650b6b737411318541 *R/stat-counth.R
 85cf585687682389a9ba63b17b2a00cf *R/stat-summaryh.R
 803113be1f0ca72a7421c71e80c54093 *R/stat-xdensity.R
@@ -39,7 +39,7 @@ f45330aa65e72140ab8051a71c7b8840 *man/stat_binh.Rd
 0937ac5182eb21638438315a41689baf *man/stat_counth.Rd
 f1db57a999c822889b69312a0af3713a *man/stat_summaryh.Rd
 f3c7eedd7a8f6e54f2062fbff0ef80d8 *man/stat_xdensity.Rd
-703248a4b4f94c70d30d08b04b57a28b *tests/testthat.R
+987061a576d740260c4b577f5fc08a5e *tests/testthat.R
 7f4f92d613fa12d324e52c5d0ee8df21 *tests/testthat/_snaps/flip.md
 262f475fca8677ca9fb6432c4af3462f *tests/testthat/_snaps/geom-errorbarh/height-and-width-aesthetics-are-equivalent.svg
 ce8b671615429fb65d9d8511d62a7dcc *tests/testthat/_snaps/geoms/facet-grid-with-free-scales.svg
